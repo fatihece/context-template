@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class SongList extends Component {
   render() {
     //this.props  = songs: state.songs
-    console.log(this.props)
+    console.log(this.props.songs)
     return <div>SongList</div>;
   }
 }
