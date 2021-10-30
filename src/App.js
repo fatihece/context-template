@@ -3,7 +3,12 @@ import Footer from './Footer'
 import Header from './Header'
 
 const App = () => {
-    const[theme, setTheme] = React.useState("light")
+    const [theme, setTheme] = React.useState("light")
+    
+    React.useEffect(() => {
+        document.body.className = theme
+    }, [theme])
+    
     return (
         <div>
             <h2 style={{ color: "red" }}>Learning context </h2>
