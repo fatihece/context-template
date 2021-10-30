@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, MainContext } from 'react'
 
 const Header = () => {
-    const { theme } = useContext(MainContext)
+    const {theme} = useContext(MainContext)
         
     return (
         <div>
