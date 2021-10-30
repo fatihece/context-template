@@ -1,13 +1,18 @@
 import React from 'react'
-import SwitchTheme from './SwitchTheme'
+import {MainContext, useContext} from "./context"
+
 
 
 const Footer = () => {
-   
+    const changeTheme = () => {
+       setTheme(theme === "light" ? "dark" : "light")
+    }
+    
+    const {setTheme, theme} = useContext(MainContext)
     return (
         <div>
             <h2>Footer Component</h2>
-            <SwitchTheme  />
+             <button onClick={changeTheme}>Switch theme</button>
         </div>
     )
 }

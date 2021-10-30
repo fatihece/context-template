@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
-import { MainContext } from './context'
+import {MainContext, useContext} from "./context"
 
 const App = () => {
     const [theme, setTheme] = React.useState("light")
@@ -16,7 +16,7 @@ const App = () => {
     }
 
     return (
-        <MainContext.Provider value= {data}>
+        <MainContext.Provider value={data}>
             <h2 style={{ color: "red" }}>Learning context </h2>
             <hr/>
             <Header />
