@@ -3,10 +3,12 @@ import Footer from './Footer'
 import Header from './Header'
 
 const App = () => {
+    const[theme, setTheme] = React.useState("light")
     return (
         <div>
-            <h2>Learning context </h2>
-            <Header />
+            <h2 style={{ color: "red" }}>Learning context </h2>
+            <hr/>
+            <Header theme={theme} setTheme={ setTheme}/>
             <Footer />
         </div>
     )

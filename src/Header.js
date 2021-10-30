@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({theme}) => {
     return (
         <div>
-            <h2>Current Theme: </h2>
+            <h2>Current Theme:{theme} </h2>
         </div>
     )
 }
