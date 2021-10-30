@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
+import { MainContext } from './context'
 
 const App = () => {
     const [theme, setTheme] = React.useState("light")
@@ -8,14 +9,19 @@ const App = () => {
     React.useEffect(() => {
         document.body.className = theme
     }, [theme])
-    
+
+    const data = {
+        theme,
+        setTheme
+    }
+
     return (
-        <div>
+        <MainContext.Provider value= {data}>
             <h2 style={{ color: "red" }}>Learning context </h2>
             <hr/>
-            <Header theme={theme} setTheme={ setTheme}/>
-            <Footer theme={theme} setTheme={ setTheme}/>
-        </div>
+            <Header />
+            <Footer />
+        </MainContext.Provider>
     )
 }
 

@@ -1,6 +1,10 @@
 import React from 'react'
+import { useContext, MainContext } from 'react'
 
-const SwitchTheme = ({theme, setTheme}) => {
+
+const SwitchTheme = () => {
+    
+    const {setTheme, theme} = useContext(MainContext)
 
     const changeTheme = () => {
     setTheme(theme==="light" ? "dark" : "light")

@@ -1,3 +1,8 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 const MainContext = createContext();
+
+
+export {
+    MainContext, useContext
+}
