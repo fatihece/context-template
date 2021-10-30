@@ -9,7 +9,7 @@ const App = () => {
             <h2 style={{ color: "red" }}>Learning context </h2>
             <hr/>
             <Header theme={theme} setTheme={ setTheme}/>
-            <Footer />
+            <Footer theme={theme} setTheme={ setTheme}/>
         </div>
     )
 }
