@@ -9,3 +9,10 @@ body.dark{
     background: #333;
     color: #eee;
 }
+
+.change-theme{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 10px;
+}

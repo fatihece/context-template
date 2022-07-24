@@ -1,28 +1,28 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import {MainContext, useContext} from "./context"
+import React from "react";
+import Footer from "../src/components/context/Footer";
+import Header from "../src/components/context/Header";
+import { MainContext } from "../src/components/context/context";
 
 const App = () => {
-    const [theme, setTheme] = React.useState("light")
-    
-    React.useEffect(() => {
-        document.body.className = theme
-    }, [theme])
+  const [theme, setTheme] = React.useState("light");
 
-    const data = {
-        theme,
-        setTheme
-    }
+  React.useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
-    return (
-        <MainContext.Provider value={data}>
-            <h2 style={{ color: "red" }}>Learning context </h2>
-            <hr/>
-            <Header />
-            <Footer />
-        </MainContext.Provider>
-    )
-}
+  const data = {
+    theme,
+    setTheme,
+  };
 
-export default App
+  return (
+    <MainContext.Provider value={data}>
+      <div className="change-theme">
+        <Header />
+        <Footer />
+      </div>
+    </MainContext.Provider>
+  );
+};
+
+export default App;
