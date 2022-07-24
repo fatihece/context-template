@@ -1,18 +1,16 @@
-body.light{
-    background: #eee;
-    color: #333;
-    
+body.light {
+  background: #eee;
+  color: #333;
 }
 
-
-body.dark{
-    background: #333;
-    color: #eee;
+body.dark {
+  background: #333;
+  color: #eee;
 }
 
-.change-theme{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin: 0 10px;
+.change-theme {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 10px;
 }

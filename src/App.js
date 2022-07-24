@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Footer from "../src/components/context/Footer";
 import Header from "../src/components/context/Header";
 import { MainContext } from "../src/components/context/context";
+import Form from "./components/form/Form";
 
 const App = () => {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = useState("light");
 
   React.useEffect(() => {
     document.body.className = theme;
@@ -21,6 +22,7 @@ const App = () => {
         <Header />
         <Footer />
       </div>
+      <Form />
     </MainContext.Provider>
   );
 };
