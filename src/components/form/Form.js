@@ -6,6 +6,7 @@ const Form = () => {
   return (
     <div className="form-container">
       <form>
+        <h1>Sign Up</h1>
         <FormInput />
         <button type="submmit">Submit</button>
       </form>
