@@ -29,13 +29,13 @@ const Form = () => {
       placeholder: "Enter your email",
       label: "Email",
       required: true,
-      // pattern:"^\S+@\S+\.\S+$"
+       pattern:"^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$",
       error:"Email pattern should be valid"
     },
     {
       id: 3,
       name: "password",
-      type: "text",
+      type: "password",
       placeholder: "Enter your password",
       label: "Password",
       required: true,
@@ -46,7 +46,7 @@ const Form = () => {
     {
       id: 4,
       name: "confirm",
-      type: "text",
+      type: "password",
       placeholder: "Enter your confirm password",
       label: "Confirm Password",
       required: true,
