@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
-function FormInput() {
+function FormInput(props) {
+  const{id,onChange,label,...inputProps} = props
   return (
     <div className="form-input">
-      <label>Username</label>
-      <input type="text" />
+      <label>{label}</label>
+      <input  name={props.name} onChange={onChange} type="text" {...inputProps}/>
     </div>
   );
 }
