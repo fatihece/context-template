@@ -48,3 +48,14 @@
   h1{
     text-align: center;
   }
+
+  .form-input span{
+    color:red;
+    font-size: 12px;
+    text-align: start;
+    display: none;
+  }
+
+  input:invalid~span{
+    display: block;
+  }
